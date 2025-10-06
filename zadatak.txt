@@ -1,0 +1,18 @@
+Prikaz liste korisnika i informacije o pojedinom korisniku
+
+Kreirati novi React projekt.
+
+Potrebno je napraviti projekt koji će prikazivati listu korisnika na jednom pageu, a klikom na pojedinog korisnika, otvoriti više detalja
+o odabranom korisniku na novom pageu (koristiti React Router).
+
+Potrebni API:
+https://jsonplaceholder.typicode.com/users - dohvacanje svih korisnika
+https://jsonplaceholder.typicode.com/users/{id} - dohvaćanje pojedinog usera (id predstavlja id odabranog korisnika)
+(Više informacija: https://jsonplaceholder.typicode.com/)
+
+Neki od koncepata koji su potrebni za rješavanje ovog zadatka: useEffect, useState, React Router...
+
+Na listi gdje se prikazuju svi korisnici, za pojedinog korisnika na screenu je potrebno ispisati samo ime (name).
+Na pageu gdje se prikazuju podaci o pojedinom korisniku, na screenu je potrebno prikazti sljedece podatke: name, email, phone, website.
+
+Izgled i način vizualizacije podataka je proizvoljan.
