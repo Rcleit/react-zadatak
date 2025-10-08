@@ -1,0 +1,61 @@
+Za ovaj zadatak sam prvo forkao originalni repozitorij na svoj GitHub račun,
+zatim sam ga klonirao na svoje računalo. Nakon toga sam instalirao potrebne
+pakete pomoću naredbe npm install.
+
+Projekt sam pokrenuo lokalno i krenuo sam s implementacijom.
+
+U App.js sam definirao rute koristeći React Router. Napravio sam dvije rute:
+jednu za prikaz liste korisnika (/), i drugu za prikaz detalja o pojedinom
+korisniku (/user/:id).
+
+Zatim sam kreirao komponentu UsersList koja dohvaća podatke o korisnicima s
+API-ja https://jsonplaceholder.typicode.com/users.
+
+Podatke sam dohvatio koristeći fetch unutar Reactovog useEffect hooka i spremio
+ih u stanje s useState.
+
+Na stranici s listom prikazao sam samo imena korisnika kao linkove koji vode na
+stranicu s detaljima o korisniku.
+
+Za prikaz detalja korisnika napravio sam komponentu UserDetails koja koristi 
+useParams iz React Routera za dohvat ID-a korisnika iz URL-a.
+
+Zatim šaljem zahtjev na API https://jsonplaceholder.typicode.com/users/{id} da
+dobijem detaljne informacije o korisniku te prikazujem ime, email, telefon i web
+stranicu.
+
+Također sam dodao prikaz poruke "Učitavanje..." dok čekam podatke, te poruku o
+grešci ako korisnik nije pronađen.
+
+
+Evo popis stavki koje sam jasno obradio u svom rješenju:
+
+
+- kreirao React projekt
+
+- postavio React Router za navigaciju između stranica
+
+- omogućio dohvaćanje liste korisnika s API-ja
+  (https://jsonplaceholder.typicode.com/users) pomoću useEffect i fetch
+
+- omogućio prikazivanje samo imena korisnika na glavnoj stranici
+
+- omogućio klikanje na korisnika koji vodi na detaljni page/novu stranicu
+
+- omogućio dohvaćanje detaljnih podataka o korisniku s API-ja
+  (https://jsonplaceholder.typicode.com/users/{id})
+
+- omogućio prikazivanje detalja korisnika: ime, email, telefon i web stranica
+
+- iskoristio React Hookove (useState, useEffect) za upravljanje podacima i
+  efektima
+
+- držao se osnovnog i preglednog izgleda stranica radi fokusiranja na
+  funkcionalnost
+
+
+Na kraju sam sve promjene spremio (commitao) i gurnuo (pushao) na svoj GitHub
+repozitorij sa kojega sam poslao pull request na repozitorij Algebre sa kojeg
+sam i forkao zadatak!
+
+Ako ovo ne valja (a ubio sam se od posla) bit ću luuuuud...!!!  :((((
